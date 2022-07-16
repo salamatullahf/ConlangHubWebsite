@@ -1,0 +1,56 @@
+{% extends "Layout.html" %}
+
+{% block title %}Known Conlangs{% endblock %}
+
+{% block pageTitle %} Known Conlangs {% endblock %}
+
+{% block pageText %}
+<div class="cf">
+    <img src="{{url_for('static', filename='images/globes.jpg')}}" alt="A collection of globes">
+</div>
+<br>
+
+While many people make conlangs nowadays for fun or creative projects that have a small scope, there are
+conlangs that are known more widely. Conlangs aren't spoken widely, but there are some conlangs that do
+have speakers.<br><br>
+
+<h3>Esperanto</h3>
+
+    Esperanto (/ˌɛspəˈrɑːntoʊ/ or /ˌɛspəˈræntoʊ/) is the world's most widely spoken constructed
+international auxiliary language. It is the only such language with a population of native speakers,
+of which there are perhaps several thousand. Usage estimates are difficult, but two recent estimates
+put the number of active speakers at around 100,000.[3] Concentration of speakers is highest in Europe,
+East Asia and South America. The Universal Esperanto Association has more than 5,500 members in 120 countries.
+The language has also gained a noticeable presence on the internet in recent years, as it became increasingly
+accessible on platforms such as Duolingo.
+<br><br>
+
+Esperanto was created by Polish ophthalmologist L. L. Zamenhof in 1887. It was intended to be a universal
+second language for international communication. Zamenhof first described the language in Dr. Esperanto's
+International Language, which he published in five languages under the pseudonym "Doktoro Esperanto".
+Zamenhof claimed that the grammar of the language could be learned in one hour, though this estimate assumed
+a learner with a background in European languages. The word esperanto translates into English as "one who hopes";
+Esperanto speakers are often called "Esperantists" (Esperantistoj).
+<br><br>
+Although no country has adopted Esperanto officially, Esperantujo ("Esperanto-land")
+is the name given to the collection of places where it is spoken.
+
+    <br><br>
+
+<h3>Try Translating the page to Esperanto!</h3>
+
+Below you can select Esperanto from the dropdown menu and see this page in Esperanto!<br><br>
+
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+
+
+
+
+
+{% endblock %}

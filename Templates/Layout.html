@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:style="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+  <link rel="icon"
+      type="image/png"
+      href="{{url_for('static', filename='images/book.png')}}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel = "stylesheet" type="text/css" href="{{url_for('static', filename= 'css/layout.css')}}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/project2.js"></script>
+   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+
+<body>
+
+
+  <div class="containera">
+    <img src="{{url_for('static', filename='images/letter.jpg')}}" alt="A collection various letter stamps"/>
+    <div class="centered">
+      <a href="{{ url_for('index') }}">CONLANG HUB</a>
+    </div>
+  </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #1f1f22;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{{ url_for('index') }}">ConLang Hub</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="{{ url_for('about') }}">About</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="{{ url_for('conlang') }}">Known Conlangs</a>
+              </li>
+              <li class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Making a Conlang
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="{{ url_for('tips') }}">General Tips</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('phonetics') }}">Phonetics</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('words') }}">Sentence & Word Structure</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('ortho') }}">Orthography</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="{{ url_for('blog') }}">Blog</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="{{ url_for('join') }}">Join the Community</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <div class="pageContainer">
+
+    <div class="pageContent">
+
+      <!-- Page content -->
+      <div class="main">
+        <h1>{% block pageTitle %}{% endblock %}</h1>
+        {% block pageText %}{% endblock %}
+      </div>
+      <!-- Side navigation -->
+      <div class="sidenav">
+        <img src="{{url_for('static', filename='images/sideBarImg.png')}}" alt="ConLang Hub Logo"/>
+        <h2>Conlang Hub</h2>
+        <p>ConLang Hub is the number one source for those involved or interested in the creation of constructed languages.</p>
+        <a href="https://discord.com/" target="_blank">Discord</a>
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="{{ url_for('contact') }}" >Contact Us</a>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer class="bg-dark text-center text-lg-start">
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+    <form action = "{{ url_for('sub') }}" method = "POST">
+      <div class="mb-3" >
+        <h4>Subscribe to our newsletter!</h4>
+        <input type="email" name = "emaila" placeholder="Email address" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3" >
+        <input type="text" name = "namea" placeholder="Name" id="name" aria-describedby="nameHelp" required>
+        <div id="nameHelp" class="form-text">What you want us to call you.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Subscribe!</button>
+    </form>
+  </div>
+
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Form -->
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">ConLang Hub</h5>
+
+        <p>
+          ConLang Hub is a great site for those interested in ConLangs and creating them,
+          as creators of ConLangs ourselves, we recommend checking out these resources, all of
+          which get the ConLang Hub seal of approval!
+        </p>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Resources</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://www.vulgarlang.com/" target="_blank" class="text-light">Vulgar</a>
+          </li>
+          <li>
+            <a href="http://akana.conlang.org/tools/awkwords/" target="_blank" class="text-light">Word Generator</a>
+          </li>
+          <li>
+            <a href="https://omniglot.com/" target="_blank" class="text-light">Omniglot</a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/r/conlangs/" target="_blank" class="text-light">r/Conlangs</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Resources</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" target="_blank" class="text-light">WALS</a>
+          </li>
+          <li>
+            <a href="https://glossary.sil.org/" target="_blank" class="text-light">SIL's Glossary</a>
+          </li>
+          <li>
+            <a href="https://ocw.mit.edu/courses/linguistics-and-philosophy/24-917-conlangs-how-to-construct-a-language-fall-2018/lecture-notes/" target="_blank" class="text-light">MIT Conlang Course</a>
+          </li>
+          <li>
+            <a href="https://www.zompist.com/kit.html" target="_blank" class="text-light">Language Construction Kit</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright: ConLang Hub
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+</body>
+</html>

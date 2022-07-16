@@ -1,0 +1,117 @@
+{% extends "Layout.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block pageTitle %}About ConLang Hub{% endblock %}
+
+{% block pageText %}
+<div class="cf">
+    <img src="{{url_for('static', filename='images/people.jpg')}}" alt="A group of people working at a table">
+</div>
+<br>
+
+<h3>What is a ConLang?</h3>
+Conlang is short for "Constructed Language". A constructed language is is a language whose
+phonology, grammar, and vocabulary, instead of having developed naturally, are consciously
+devised. Constructed languages may also be referred to as artificial languages, planned
+languages or invented languages and in some cases, fictional languages. Planned languages
+are languages that have been purposefully designed. They are the result of deliberate
+controlling intervention, thus of a form of language planning.<br><br>
+
+There are many possible reasons to create a constructed language, such as to ease
+human communication (see international auxiliary language and code); to give fiction
+or an associated constructed setting an added layer of realism; for experimentation
+in the fields of linguistics, cognitive science, and machine learning;
+for artistic creation; and for language games. Some people make constructed languages
+simply because they like doing it.<br><br>
+
+Here at ConLang Hub, our team is filled with people who are making conlangs for fun, or
+as part of a creative endevour (worldbuilding, fantasy novels, etc.).<br><br>
+
+<h3>Who is the ConLang Hub Team?</h3>
+Our current team is 7 mods with experience and interest in constructed languages, each mod
+has a conlang project of their own. Our team members come from a wide array of backgrounds,
+though most are currently based in North America.<br><br>
+
+<h3>Team Members</h3><br>
+
+<div class="card-container">
+        <div class="card text-white" style="width: 18rem; background-color: #9e5426;">
+            <img src="{{url_for('static', filename='images/profile.png')}}" class="card-img-top" alt="Default Profile Picture">
+            <div class="card-body">
+              <h5 class="card-title">Shiro</h5>
+              <p class="card-text">
+                  <b>Age: </b> 26<br>
+                  <b>Pronouns: </b> He/Him<br>
+                  <b>Interests: </b> Creative writing, sci-fi<br>
+                  <b>Conlang: </b> Luaili<br>
+              </p>
+            </div>
+        </div>
+
+        <div class="card text-white" style="width: 18rem; background-color: #9e5426;">
+            <img src="{{url_for('static', filename='images/profile.png')}}" class="card-img-top" alt="Default Profile Picture">
+            <div class="card-body">
+              <h5 class="card-title">Ximena</h5>
+              <p class="card-text">
+                  <b>Age: </b> 21<br>
+                  <b>Pronouns: </b> She/Her<br>
+                  <b>Interests: </b> Worldbuilding, low fantasy<br>
+                  <b>Conlang: </b> Evatish<br>
+              </p>
+            </div>
+        </div>
+
+        <div class="card text-white" style="width: 18rem; background-color: #9e5426;">
+            <img src="{{url_for('static', filename='images/profile.png')}}" class="card-img-top" alt="Default Profile Picture">
+            <div class="card-body">
+              <h5 class="card-title">Abdullah</h5>
+              <p class="card-text">
+                  <b>Age: </b> 23<br>
+                  <b>Pronouns: </b> He/They<br>
+                  <b>Interests: </b> Linguistics, high fantasy<br>
+                  <b>Conlang: </b> Tchazat<br>
+              </p>
+            </div>
+        </div>
+
+        <div class="card text-white" style="width: 18rem; background-color: #9e5426;">
+                <img src="{{url_for('static', filename='images/profile.png')}}" class="card-img-top" alt="Default Profile Picture">
+                <div class="card-body">
+                  <h5 class="card-title">Marius</h5>
+                  <p class="card-text">
+                      <b>Age: </b> 27<br>
+                      <b>Pronouns: </b> He/Him<br>
+                      <b>Interests: </b> Worldbuilding, language<br>
+                      <b>Conlang: </b> Zyriyic <br>
+                  </p>
+                </div>
+        </div>
+
+        <div class="card text-white" style="width: 18rem; background-color: #9e5426;">
+                <img src="{{url_for('static', filename='images/profile.png')}}" class="card-img-top" alt="Default Profile Picture">
+                <div class="card-body">
+                  <h5 class="card-title">Riley</h5>
+                  <p class="card-text">
+                      <b>Age: </b> 20<br>
+                      <b>Pronouns: </b> They/Them<br>
+                      <b>Interests: </b> Creative writing, music<br>
+                      <b>Conlang: </b> Pozu <br>
+                  </p>
+                </div>
+        </div>
+
+        <div class="card text-white" style="width: 18rem; background-color: #9e5426;">
+                    <img src="{{url_for('static', filename='images/profile.png')}}" class="card-img-top" alt="Default Profile Picture">
+                    <div class="card-body">
+                      <h5 class="card-title">Nastya</h5>
+                      <p class="card-text">
+                          <b>Age: </b> 24<br>
+                          <b>Pronouns: </b> She/Her<br>
+                          <b>Interests: </b> Sci-fi, Othrography<br>
+                          <b>Conlang: </b> Yaqriz <br>
+                      </p>
+                    </div>
+        </div>
+    </div>
+{% endblock %}

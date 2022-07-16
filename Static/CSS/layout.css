@@ -1,0 +1,290 @@
+
+body{
+    background-color: rgb(42, 42, 46);
+    color:rgb(255, 255, 255);
+    padding:0px;
+}
+
+.navbar-brand
+{
+    font-size: 1.8em !important;
+}
+
+.navbar li{
+    font-size: 1.2em !important;
+}
+
+footer{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+a:link{
+   color: rgb(209, 209, 226);
+}
+
+ /* The sidebar menu */
+ .sidenav {
+    height: 50%;
+    width: 25%;
+    position:sticky;
+    position:-webkit-sticky;
+    right:0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 40px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    text-align: center;
+  }
+
+  .sidenav img{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 25px;
+  }
+
+  .sidenav p, h2{
+    padding: 5px 20px;
+    text-align: center;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .main{
+      width: 70%;
+      padding-left: 50px;
+      padding-top: 25px;
+      padding-bottom: 100px;
+  }
+
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  @media (max-width: 1000px){
+    .sidenav{
+        width: 0%;
+    }
+
+  }
+
+   @media (max-width: 1000px){
+    .centered{
+        font-size: 20px;
+    }
+
+  }
+
+.pageContainer{
+    display: flex;
+    flex-direction:column;
+}
+
+.pageContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ /* Container holding the image and the text */
+ .containera {
+  height: 200px;
+  text-align: center;
+  color: white;
+  padding: 0px;
+  overflow: hidden;
+}
+
+
+/* Centered text */
+.centered {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  background-color: rgba(0, 0, 0, 0.651);
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 10px;
+}
+
+.centered a:link{
+    color: #f0f0f0;
+}
+
+.centered a:visited{
+    color: #f0f0f0;
+}
+
+.input-group{
+    padding-bottom: 25px;
+}
+
+.card {
+    color: black;
+    flex-basis: 30%;
+    margin-bottom: 50px;
+
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.pageCont img{
+    width: 80%;
+
+}
+
+.cf {
+  position:relative;
+  height:300px;
+  width:1000px;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+.cf img {
+  width: 900px;
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+  @keyframes cfFadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+.cf img.top {
+animation-name: cfFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+}
+
+.cf img.middle {
+animation-name: cfFadeInOut;
+animation-delay: 6s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+}
+
+h1{
+    padding-bottom: 15px;
+}
+
+@media (max-width: 1300px){
+    .cf{
+        height: 220px;
+    }
+
+    .cf img{
+        width: 750px;
+    }
+
+  }
+
+
+@media (max-width: 1200px){
+    .cf{
+        height: 220px;
+    }
+
+    .cf img{
+        width: 700px;
+    }
+
+  }
+
+
+  @media (max-width: 1000px){
+    .card{
+        flex-basis: 45%;
+    }
+
+    .main{
+        width: 90%;
+    }
+
+    .cf{
+        height: 250px;
+    }
+
+    .cf img{
+        width: 750px;
+    }
+
+  }
+
+  @media (max-width: 900px){
+    .cf{
+        height: 220px;
+    }
+
+    .cf img{
+        width: 700px;
+    }
+
+  }
+
+
+    @media (max-width: 800px){
+    .card{
+        flex-basis: 100%;
+    }
+
+    .cf{
+        height: 0px;
+    }
+
+    .cf img{
+        width: 0px;
+    }
+
+  }
+
+
+
+
+

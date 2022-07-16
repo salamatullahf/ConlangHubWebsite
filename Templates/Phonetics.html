@@ -1,0 +1,54 @@
+{% extends "Layout.html" %}
+{% block title %}Phonetics{% endblock %}
+
+{% block pageTitle %}Linguistics: Phonetics{% endblock %}
+
+{% block pageText %}
+<div class="cf">
+    <img src="{{url_for('static', filename='images/mic.jpg')}}" alt="A microphone">
+</div>
+<br>
+
+Phonetics is a branch of linguistics that studies how humans produce and perceive sounds,
+or in the case of sign languages, the equivalent aspects of sign. Phoneticians—linguists
+who specialize in phonetics—study the physical properties of speech. The field of phonetics
+is traditionally divided into three sub-disciplines based on the research questions involved
+such as how humans plan and execute movements to produce speech (articulatory phonetics),
+different movements affect the properties of the resulting sound (acoustic phonetics), or how humans
+convert sound waves to linguistic information (auditory phonetics). Traditionally, the minimal
+linguistic unit of phonetics is the phone—a speech sound in a language—which differs from the
+phonological unit of phoneme; the phoneme is an abstract categorization of phones.<br><br>
+
+<h3>The International Phonetic Alphabet</h3>
+
+The International Phonetic Alphabet (IPA) is an alphabetic system of phonetic notation based
+primarily on the Latin script. It was devised by the International Phonetic Association
+in the late 19th century as a standardized representation of speech sounds in written form.
+The IPA is used by lexicographers, foreign language students and teachers, linguists,
+speech–language pathologists, singers, actors, constructed language creators and translators.<br><br>
+
+IPA symbols are composed of one or more elements of two basic types, letters and diacritics.
+For example, the sound of the English letter ⟨t⟩ may be transcribed in IPA with a single letter,
+[t], or with a letter plus diacritics, [t̺ʰ], depending on how precise one wishes to be.
+Slashes are used to signal phonemic transcription; thus /t/ is more abstract than
+either [t̺ʰ] or [t] and might refer to either, depending on the context and language.
+
+<div class="pageCont">
+    <img src="{{url_for('static', filename='images/ipachart-04.png')}}" alt="The IPA Consonant chart">
+</div>
+
+Above is all the consonants in the International Phonetic Alphabet. The chart is organized by point of
+articulation (x-axis) and the manner of articulation (y-axis). The blacked out regions represent
+sounds believed to be impossible to make, whereas the blank white regions are sounds that do not exist
+currently, but are believed to be possible. Each cell is split into two, the former sounds being
+unvoiced, and the second being voiced.
+
+<div class="pageCont">
+    <img src="{{url_for('static', filename='images/ipachart-03.png')}}" alt="The IPA Vowel chart">
+</div>
+
+Above is all the vowels in the International Phonetic Alphabet. As seen in the chart, the y-axis corresponds
+to the height of the tongue when making the sound, and the x-axis corresponds to how far forward or back the tongue is.
+Where there are pairs of vowels, the first is unrounded, and the second is the rounded vowel.
+
+{% endblock %}

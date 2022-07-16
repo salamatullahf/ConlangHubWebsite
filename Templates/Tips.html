@@ -1,0 +1,50 @@
+{% extends "Layout.html" %}
+{% block title %}Conlang Tips{% endblock %}
+
+{% block pageTitle %}Conlang Tips{% endblock %}
+
+{% block pageText %}
+<div class="cf">
+    <img src="{{url_for('static', filename='images/question.jpg')}}" alt="A black and red picture of question marks">
+</div>
+<br>
+<h3>How to get started</h3>
+Creating a conlang can be a daunting task, especially if you haven't made one before. One of the most common questions
+we get asked is "Where do I start?". The truth is, there really isn't a right answer! Each of our team members
+has had a different approach, and in our community we similarly see a wide range of how people start making their language.<br><br>
+
+That answer, though, isn't helpful, we know! So we collected some answers from our team members to try and give you an
+idea of ways you can start making your conlang! <br><br>
+
+    <div class="card-container">
+        <div class="card text-white" style="background-color: #9e5426;">
+            <div class="card-header">
+                <i>Mod Shiro</i>
+            </div>
+          <div class="card-body">
+            "I wasn't that familiar with linguistics, so I started by using Vulgar to generate a language, and messed
+              around with the program until I started to get a feel for what I wanted my language to be."
+          </div>
+        </div>
+
+        <div class="card text-white" style="background-color: #9e5426;">
+            <div class="card-header">
+                <i>Mod Ximena</i>
+            </div>
+          <div class="card-body">
+            "I didn't care too much about the linguistics side of things, so I just used English letters and sounds
+              and used a word generator to create words."
+          </div>
+        </div>
+
+        <div class="card text-white" style="background-color: #9e5426;">
+            <div class="card-header">
+                <i>Mod Abdullah</i>
+            </div>
+          <div class="card-body">
+            "I started out by figuring out what sounds I wanted in my language, then made groups of syllables
+              , then how I wanted to structure my words, and from there it was pretty easy to make words."
+          </div>
+        </div>
+    </div>
+{% endblock %}

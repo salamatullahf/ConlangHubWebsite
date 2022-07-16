@@ -1,0 +1,38 @@
+{% extends "Layout.html" %}
+
+{% block title %}Join{% endblock %}
+
+{% block pageTitle %}Join the Team!{% endblock %}
+
+{% block pageText %}
+
+<h3>
+    <i>Want to join our team? Sign up here!</i>
+</h3>
+
+<p>
+    ConLang hub is always looking for more team members to write articles, moderate discussions, and more!
+    If you are interested in joining our team, please let us know so we can contact you and talk further about
+     you joining our amazing team!
+</p>
+
+  <form action = "{{ url_for('apply') }}" method = "POST">
+         Full name<br>
+         <input type = "text" name = "nm" required/></br>
+
+         Email<br>
+         <input type = "email" name = "email" required/></br>
+
+         Message<br>
+         <input type = "text" name = "mess" /><br>
+
+         <input type = "submit" value = "submit" /><br>
+      </form>
+
+   </body>
+
+
+
+
+
+{% endblock %}

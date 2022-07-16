@@ -1,0 +1,52 @@
+{% extends "Layout.html" %}
+
+{% block title %}Blog{% endblock %}
+
+{% block pageTitle %}ConLang Hub: Blog{% endblock %}
+
+{% block pageText %}
+<div class="card-container">
+  <div class="card" style="width: 18rem;">
+    <img src="{{url_for('static', filename='images/blog1.jpg')}}" class="card-img-top" alt="A desk with a typewriter and a notebook">
+    <div class="card-body">
+      <h5 class="card-title">Creating an Ixaili Poem</h5>
+      <h6>May 30th, 2021</h6>
+      <p class="card-text">Guest writer Salamatullah shares their process of making a poem for their project.</p>
+      <a href="{{ url_for('post1') }}" class="btn btn-dark">Read Now</a>
+    </div>
+  </div>
+
+    <div class="card" style="width: 18rem;">
+    <img src="{{url_for('static', filename='images/blog2.jpg')}}" class="card-img-top" alt="A desk with a notebook and camera">
+    <div class="card-body">
+      <h5 class="card-title">Creating an Ixaili Poem</h5>
+      <h6>May 30th, 2021</h6>
+      <p class="card-text">Guest writer Salamatullah shares their process of making a poem for their project.</p>
+      <a href="#" class="btn btn-dark">Read Now</a>
+    </div>
+  </div>
+
+    <div class="card" style="width: 18rem;">
+    <img src="{{url_for('static', filename='images/blog3.jpg')}}" class="card-img-top" alt="A paper with cursive writing">
+    <div class="card-body">
+      <h5 class="card-title">Creating an Ixaili Poem</h5>
+      <h6>May 30th, 2021</h6>
+      <p class="card-text">Guest writer Salamatullah shares their process of making a poem for their project.</p>
+      <a href="#" class="btn btn-dark">Read Now</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="{{url_for('static', filename='images/blog4.jpg')}}" class="card-img-top" alt="A desk with a tablet, book, and tea cup.">
+    <div class="card-body">
+      <h5 class="card-title">Creating an Ixaili Poem</h5>
+      <h6>May 30th, 2021</h6>
+      <p class="card-text">Guest writer Salamatullah shares their process of making a poem for their project.</p>
+      <a href="#" class="btn btn-dark">Read Now</a>
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}

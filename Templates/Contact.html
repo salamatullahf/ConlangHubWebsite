@@ -1,0 +1,30 @@
+{% extends "Layout.html" %}
+{% block title %}Conlang Tips{% endblock %}
+
+{% block pageTitle %}Contact Info{% endblock %}
+
+{% block pageText %}
+
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+    <form action = "{{ url_for('msg') }}" method = "POST" id="msgform">
+      <div class="mb-3" >
+        <h4>Send us a message!</h4>
+        <input type="email" name = "emailb" placeholder="Email address" required >
+      </div>
+      <div class="mb-3" >
+        <input type="text" name = "nameb" placeholder="Name" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+    <br>
+    <textarea form ="msgform" name="msgLong" id="taid" cols="35" wrap="soft"></textarea>
+
+</div>
+<br>
+<h3>Other Contact Methods</h3>
+<br>
+<h4>Phone: xxx-xxx-xxxx</h4>
+<h4>Email: <a href = "mailto: conlanghub@gmail.com">conlanghub@gmail.com</a></h4>
+
+
+{% endblock %}
